@@ -1,13 +1,13 @@
 #about {
-  background-color: $primary-color;
+  background-color: #000000;
   background-image: linear-gradient(
     135deg,
-    $primary-color 0%,
-    $secondary-color 100%
+    #000000 0%,
+    #000000 100%
   );
   color: $white-color;
   height: 100%;
-  border-top: 0px;
+  border-top: 5px solid yellow;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
