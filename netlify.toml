@@ -1,0 +1,19 @@
+[build]
+  # Base directory is the root of your project
+  base = "."
+  
+  # Build command to create your site
+  command = "npm run build"
+  
+  # Publish directory is where your built files are located
+  publish = "dist"
+
+# Redirects for SPA
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Optional: Build settings
+[build.environment]
+  NODE_VERSION = "18" 
