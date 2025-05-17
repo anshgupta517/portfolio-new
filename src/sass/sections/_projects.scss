@@ -18,20 +18,27 @@
 
     .row {
       margin-bottom: 8rem;
+      display: flex;
+      align-items: center;
 
       .cen{
         display: flex;
         align-items: center;
         justify-content: center;
-        /* From https://css.glass */
-background: rgba(255, 255, 255, 0.31);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(13px);
--webkit-backdrop-filter: blur(13px);
-border: 1px solid rgba(255, 255, 255, 1);
-color: #000;
-        
+        background: rgba(255, 255, 255, 0.31);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13px);
+        -webkit-backdrop-filter: blur(13px);
+        border: 1px solid rgba(255, 255, 255, 1);
+        color: #000;
+        height: auto;
+        margin: 0 auto;
+        padding: 2rem; 
+
+        @include respond(tab-land) {
+          margin: 0;
+        }
       }
 
       @include respond(phone) {
@@ -41,7 +48,7 @@ color: #000;
 
     &__text {
       text-align: left;
-
+      height: auto;
       
 
       @include respond(phone) {
